@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>test</title>
+    <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <link rel="stylesheet" type="text/css" href="/bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body ng-app="test" ng-controller="sessionCtrl" ng-init="load_sessions()">
+    <h1>Session</h1>
+    <p>Welcome to Session</p>
+
+    <ul>
+        <li ng-repeat="s in sessions"> {{s.name}} </li>
+    </ul>
+
+  </body>
+  <script src="/javascripts/session.js" type="text/javascript" charset="utf-8" ></script>
+</html>
